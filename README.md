@@ -9,10 +9,10 @@ Certifique-se de ter o Node.js instalado e clonado o repositório. Em seguida, i
 ```bash
 npm install
 npm run dev
-O aplicativo estará disponível em uma porta como essa http://localhost:5173.
 ```
+O aplicativo estará disponível em uma porta como essa http://localhost:5173.
 
-##Estrutura de Pastas
+## Estrutura de Pastas
 A estrutura do projeto é organizada da seguinte maneira:
 
 ### hooks/
