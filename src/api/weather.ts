@@ -2,7 +2,7 @@ const apiKey = "5333851f358c72862ec29b39ecd63642";
 
 export const fetchWeatherDataByCity = async (city: string, unit: string) => {
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`
   );
   if (!response.ok) {
     throw new Error("Data not found");
@@ -12,7 +12,7 @@ export const fetchWeatherDataByCity = async (city: string, unit: string) => {
 
 export const fetchForecastDataByCity = async (city: string, unit: string) => {
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${unit}`
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${unit}`
   );
   if (!response.ok) {
     throw new Error("Data not found");
@@ -26,7 +26,7 @@ export const fetchWeatherDataByCoords = async (
   unit: string
 ) => {
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`
   );
   if (!response.ok) {
     throw new Error("Data not found");
@@ -40,7 +40,7 @@ export const fetchForecastDataByCoords = async (
   unit: string
 ) => {
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`
   );
   if (!response.ok) {
     throw new Error("Data not found");

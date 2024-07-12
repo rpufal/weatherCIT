@@ -59,7 +59,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({
           </p>
           <div className="current-temperature">
             <img
-              src={`http://openweathermap.org/img/wn/${icon}.png`}
+              src={`https://openweathermap.org/img/wn/${icon}.png`}
               alt={`weather icon - ${description}`}
             />
             <p>

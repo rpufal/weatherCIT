@@ -42,7 +42,7 @@ const ForecastTable: React.FC<ForecastTableProps> = ({
         forecastData.map((item, index) => (
           <div key={index} className="forecast-row">
             <img
-              src={`http://openweathermap.org/img/wn/${item.icon}.png`}
+              src={`https://openweathermap.org/img/wn/${item.icon}.png`}
               alt={"weather icon - " + item.description}
             />
             <p>{item.dayOfWeek}</p>
