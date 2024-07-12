@@ -1,0 +1,48 @@
+.forecast-table {
+  margin-top: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.forecast-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.forecast-row:last-child {
+  border-bottom: none;
+}
+
+.forecast-row img {
+  width: 40px;
+  height: 40px;
+}
+
+.forecast-row p {
+  margin: 0 8px;
+  flex: 1;
+  text-align: left;
+}
+
+.forecast-row p:last-of-type {
+  text-align: right;
+}
+
+.no-forecast {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .forecast-row .description {
+    display: none;
+  }
+}

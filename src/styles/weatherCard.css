@@ -1,0 +1,37 @@
+.weather-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.current-temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.current-temperature img {
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+}
+
+.weather-card p {
+  margin: 8px 0;
+  font-size: 1em;
+  color: #555;
+}
+
+.weather-card .city-name {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
