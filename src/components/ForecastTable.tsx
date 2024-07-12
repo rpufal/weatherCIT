@@ -20,10 +20,6 @@ const ForecastTable: React.FC<ForecastTableProps> = ({
   forecastData,
   loading,
 }) => {
-  if (loading) {
-    return <LoadingSpinner />;
-  }
-
   const formatFloat = (float?: number) => {
     return float !== undefined ? float.toFixed(1) : "N/A";
   };
@@ -38,7 +34,7 @@ const ForecastTable: React.FC<ForecastTableProps> = ({
 
   return (
     <div className="forecast-table">
-      {forecastData.length > 0 ? (
+      {!loading && forecastData.length > 0 ? (
         forecastData.map((item, index) => (
           <div key={index} className="forecast-row">
             <img
@@ -54,7 +50,9 @@ const ForecastTable: React.FC<ForecastTableProps> = ({
           </div>
         ))
       ) : (
-        <div className="no-forecast">No forecast data available</div>
+        <div className="no-forecast">
+          {loading ? <LoadingSpinner /> : "No forecast data available"}
+        </div>
       )}
     </div>
   );
