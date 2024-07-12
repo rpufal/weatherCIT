@@ -1,5 +1,6 @@
 # WeatherApp - CIT Test
 Este é um aplicativo simples de previsão do tempo construído com React, TypeScript e a API do OpenWeatherMap.
+Ao todo foram cerca de 6 horas para estudar, desenvolver e fazer o deploy do projeto. Ele está hospedado atualmente em https://weather-cit.vercel.app/
 
 ## Como Rodar o Aplicativo
 
@@ -11,6 +12,7 @@ npm install
 npm run dev
 ```
 O aplicativo estará disponível em uma porta como essa http://localhost:5173.
+Não se esqueça de aceitar que ele tenha acesso a sua geolocalização através do browser, este recurso é essencial para o aplicativo.
 
 ## Estrutura de Pastas
 A estrutura do projeto é organizada da seguinte maneira:
